@@ -7,7 +7,10 @@ import panel as pn
 import plotly.express as px
 pn.extension('plotly')
 
-df = pd.read_csv("G:/My Drive/M2/T2/Data Viz/Flight Prediction DataSet/Clean_Dataset_lon_lat.csv")
+df1 = pd.read_csv("https://github.com/Vanshikas253/flight_price_analysis_dashboard/blob/bfe83af3e00f4edef74c7e6602438198d523a82d/Clean_Dataset_lon_lat%20-%20Part%201.csv")
+df2 = pd.read_csv("https://github.com/Vanshikas253/flight_price_analysis_dashboard/blob/bfe83af3e00f4edef74c7e6602438198d523a82d/Clean_Dataset_lon_lat%20-%20Part%202.csv")
+
+df = pd.concat([df1, df2])
 df.head(5)
 
 # Define the interactive widgets
