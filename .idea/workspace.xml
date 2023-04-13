@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9441471-61c0-4bc2-b54d-3b540a60dd30" name="Changes" comment="" />
+    <list default="true" id="e9441471-61c0-4bc2-b54d-3b540a60dd30" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/app/combined_dashboard_final.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/app/combined_dashboard_final.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +33,7 @@
       <updated>1681387567825</updated>
       <workItem from="1681387570383" duration="4000" />
       <workItem from="1681387747092" duration="10000" />
+      <workItem from="1681388969491" duration="7000" />
     </task>
     <servers />
   </component>
