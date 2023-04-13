@@ -206,5 +206,5 @@ dashboard = pn.Column(
 )
 
 # Show the dashboard
-dashboard.show()
+dashboard.servable()
 
