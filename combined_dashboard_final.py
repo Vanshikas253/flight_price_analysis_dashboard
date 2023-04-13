@@ -1,6 +1,3 @@
-#!pip install plotly
-#!pip install panel
-
 import pandas as pd
 import numpy as np
 import panel as pn
@@ -9,9 +6,7 @@ pn.extension('plotly')
 
 df1 = pd.read_csv("https://raw.githubusercontent.com/Vanshikas253/flight_price_analysis_dashboard/main/Clean_Dataset_lon_lat_Part1.csv")
 df2 = pd.read_csv("https://raw.githubusercontent.com/Vanshikas253/flight_price_analysis_dashboard/main/Clean_Dataset_lon_lat_Part2.csv")
-
 df = pd.concat([df1, df2])
-df.head(5)
 
 # Define the interactive widgets
 class_filter = pn.widgets.MultiSelect(options=['All'] + df['class'].unique().tolist(), name='Filter by Class', value=['All'])
@@ -171,7 +166,7 @@ widgets_row = pn.Row(class_filter, stops_filter, days_left_slider, duration_slid
 
 # Create the panel dashboard layout
 
-departure_time = pn.Column(
+dashboard = pn.Column(
     pn.Row(header, css_classes=["header"]),
     widgets_row,
     pn.Row(
@@ -211,5 +206,5 @@ departure_time = pn.Column(
 )
 
 # Show the dashboard
-departure_time.servable()
+dashboard.show()
 
