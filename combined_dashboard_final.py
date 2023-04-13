@@ -7,8 +7,8 @@ import panel as pn
 import plotly.express as px
 pn.extension('plotly')
 
-df1 = pd.read_csv("https://github.com/Vanshikas253/flight_price_analysis_dashboard/blob/bfe83af3e00f4edef74c7e6602438198d523a82d/Clean_Dataset_lon_lat%20-%20Part%201.csv")
-df2 = pd.read_csv("https://github.com/Vanshikas253/flight_price_analysis_dashboard/blob/bfe83af3e00f4edef74c7e6602438198d523a82d/Clean_Dataset_lon_lat%20-%20Part%202.csv")
+df1 = pd.read_csv("https://raw.githubusercontent.com/Vanshikas253/flight_price_analysis_dashboard/main/Clean_Dataset_lon_lat - Part 1.csv")
+df2 = pd.read_csv("https://raw.githubusercontent.com/Vanshikas253/flight_price_analysis_dashboard/main/Clean_Dataset_lon_lat - Part 2.csv")
 
 df = pd.concat([df1, df2])
 df.head(5)
